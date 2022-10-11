@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggseqplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggseqplot/ggseqplot_{{ version }}.tar.gz
-  sha256: c65f3fed90a384c116ae60dd2bacea16d8af7bc66a08fef5ae14f5db83a09d5c
+  sha256: 5954bc9ab7da82f40798987d2c90483f25be8bec5baa23e874aa05411d2696d4
 
 build:
   merge_build_host: true  # [win]
