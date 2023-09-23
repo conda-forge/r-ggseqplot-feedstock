@@ -3,6 +3,7 @@ About r-ggseqplot-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggseqplot-feedstock/blob/main/LICENSE.txt)
 
+
 About r-ggseqplot
 -----------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/maraab23/ggseqplot
 Package license: GPL-3.0-or-later
 
 Summary: A set of wrapper functions that mainly re-produces some of the sequence plots rendered with TraMineR::seqplot() and 'TraMineRextras'. Whereas 'TraMineR' uses base R to produce the plots this library draws on 'ggplot2'. The plots are produced on the basis of a sequence object defined with TraMineR::seqdef(). The package automates the reshaping and plotting of sequence data. Resulting plots are of class 'ggplot', i.e. components can be added and tweaked using '+' and regular 'ggplot2' functions.
+
 About r-ggseqplot
 -----------------
 
