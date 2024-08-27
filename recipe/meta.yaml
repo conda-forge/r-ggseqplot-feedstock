@@ -1,4 +1,4 @@
-{% set version = "0.8.3" %}
+{% set version = "0.8.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggseqplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggseqplot/ggseqplot_{{ version }}.tar.gz
-  sha256: 06cb1ce07df66d7e5342b5f9facdacaf3a9a8fa4f64a0a287076853c3b0d87d6
+  sha256: 4072fa684464c232c725b03db3628e2f54f3bb2262ecdc6ba72ea3cc3b2d9b40
 
 build:
-  number: 1
-  skip: true  # [r_base == "4.0"]
+  number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,33 +25,39 @@ requirements:
   host:
     - r-base
     - r-rdpack
-    - r-traminer
+    - r-traminer >=2.2_5
+    - r-cli
     - r-colorspace
-    - r-dplyr
-    - r-forcats
+    - r-dplyr >=1.1.0
+    - r-forcats >=1.0.0
     - r-ggh4x
-    - r-ggplot2
+    - r-ggplot2 >=3.4.0
     - r-ggrepel
     - r-ggtext
     - r-glue
+    - r-haven
     - r-patchwork
     - r-purrr
+    - r-rlang
     - r-tidyr
     - r-usethis
   run:
     - r-base
     - r-rdpack
-    - r-traminer
+    - r-traminer >=2.2_5
+    - r-cli
     - r-colorspace
-    - r-dplyr
-    - r-forcats
+    - r-dplyr >=1.1.0
+    - r-forcats >=1.0.0
     - r-ggh4x
-    - r-ggplot2
+    - r-ggplot2 >=3.4.0
     - r-ggrepel
     - r-ggtext
     - r-glue
+    - r-haven
     - r-patchwork
     - r-purrr
+    - r-rlang
     - r-tidyr
     - r-usethis
 
