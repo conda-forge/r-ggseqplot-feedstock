@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [r_base == "4.0"]
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -25,33 +25,39 @@ requirements:
   host:
     - r-base
     - r-rdpack
-    - r-traminer
+    - r-traminer >=2.2_5
+    - r-cli
     - r-colorspace
-    - r-dplyr
-    - r-forcats
+    - r-dplyr >=1.1.0
+    - r-forcats >=1.0.0
     - r-ggh4x
-    - r-ggplot2
+    - r-ggplot2 >=3.4.0
     - r-ggrepel
     - r-ggtext
     - r-glue
+    - r-haven
     - r-patchwork
     - r-purrr
+    - r-rlang
     - r-tidyr
     - r-usethis
   run:
     - r-base
     - r-rdpack
-    - r-traminer
+    - r-traminer >=2.2_5
+    - r-cli
     - r-colorspace
-    - r-dplyr
-    - r-forcats
+    - r-dplyr >=1.1.0
+    - r-forcats >=1.0.0
     - r-ggh4x
-    - r-ggplot2
+    - r-ggplot2 >=3.4.0
     - r-ggrepel
     - r-ggtext
     - r-glue
+    - r-haven
     - r-patchwork
     - r-purrr
+    - r-rlang
     - r-tidyr
     - r-usethis
 
