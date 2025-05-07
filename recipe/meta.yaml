@@ -1,4 +1,4 @@
-{% set version = "0.8.5" %}
+{% set version = "0.8.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggseqplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggseqplot/ggseqplot_{{ version }}.tar.gz
-  sha256: 03d90cf71d02e6c7df41340761271562c41c919e7237a10beb2b8824b3bd5004
+  sha256: 6f8f4e3357399d950331772b4871915729c2aacbff0a15b6ed30a9bc0aff6a65
 
 build:
   number: 0
